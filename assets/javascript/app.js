@@ -2,7 +2,7 @@ function makeQueryURL() {
 
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
-    var queryOptions = {"api-key" : "1ec31beb44ea4bb8bfa0da466d0ac6e1"};
+    var queryOptions = {"api-key" : ""};
 
     queryOptions.q = $("#search-term")
         .val()
