@@ -1,0 +1,64 @@
+* {
+  /*  display: block;*/
+}
+
+body {
+    display: block;
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    width: 960px;
+    border-radius: 0.25em;
+    background: darkblue;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+    margin: 20px auto;
+}
+
+#form-header {
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.input-form {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    width: 928px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.formLabel {
+    padding: 10px;
+}
+
+input {
+    width: 926px;
+}
+
+.buttons {
+    padding-top: 15px;
+}
+
+.search-results {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 0.25em;
+    width: 928px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+#results-header {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}

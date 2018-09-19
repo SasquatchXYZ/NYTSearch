@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>New York Times Search</title>
+
+    <!--Link to Reset CSS-->
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <!--Link to Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Link to CSS Stylesheet-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="header">
+    <h1 class="far fa-newspaper"> New York Times Search</h1>
+</div>
+
+<div class="input-form">
+    <div id="form-header"><i class="fas fa-newspaper"> Search Parameters</i></div>
+    <p class="formLabel"><label>Search Term:</label></p>
+    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
+    <p class="formLabel"><label>Number of Records to Retrieve:</label></p>
+    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
+    <p class="formLabel"><label>Star Year (Optional):</label></p>
+    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
+    <p class="formLabel"><label>End Year (Optional):</label></p>
+    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
+    <div class="buttons">
+        <button type="submit"><i class="fas fa-search"> Search</i></button>
+        <button class="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>
+    </div>
+<!--    <button type="submit"><i class="fas fa-search"> Search</i></button>
+    <button class="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>-->
+</div>
+
+<div class="search-results">
+    <div id="results-header"><i class="fas fa-table"> Top Articles</i></div>
+    <div class="results-display">
+
+    </div>
+</div>
+
+    <!--Link to jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Link to Javascript-->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
