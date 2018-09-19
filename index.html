@@ -22,17 +22,22 @@
 
 <form class="input-form">
     <div id="form-header"><i class="fas fa-newspaper"> Search Parameters</i></div>
-    <p class="formLabel"><label>Search Term:</label></p>
-    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
-    <p class="formLabel"><label>Number of Records to Retrieve:</label></p>
-    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
-    <p class="formLabel"><label>Star Year (Optional):</label></p>
-    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
-    <p class="formLabel"><label>End Year (Optional):</label></p>
-    <input type="text" onfocus="this.value=''" name="name" value="" maxlength="100">
+    <label class="formLabel">Search Term:</label><br>
+    <input type="text" onfocus="this.value=''" name="search-term" value="" id="search-term">
+    <label class="formLabel">Number of Records to Retrieve:</label><br>
+    <input type="number" onfocus="this.value=''" name="record-num" value ="" id="article-num">
+<!--    <select id="article-num" name="record-num">
+        <option selected value="1">1</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+    </select>-->
+    <label class="formLabel">Start Year (Optional):</label><br>
+    <input type="date" onfocus="this.value=''" name="start-year" value="" id="start-year">
+    <label class="formLabel">End Year (Optional):</label><br>
+    <input type="date" onfocus="this.value=''" name="stop-year" value="" id="end-year">
     <div class="buttons">
-        <button type="submit"><i class="fas fa-search"> Search</i></button>
-        <button class="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>
+        <button type="submit" id="start-search"><i class="fas fa-search"> Search</i></button>
+        <button id="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>
     </div>
 <!--    <button type="submit"><i class="fas fa-search"> Search</i></button>
     <button class="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>-->

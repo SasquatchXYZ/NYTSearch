@@ -1,12 +1,18 @@
 * {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*  display: block;*/
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     width: 960px;
     text-align: center;
     margin: 0 auto;
+}
+
+form {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -17,6 +23,7 @@ body {
 }
 
 h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 900;
     margin: 20px auto;
@@ -37,16 +44,23 @@ h1 {
     text-align: left;
 }
 
-.formLabel {
-    padding: 10px;
+label {
+    margin: 10px 0;
 }
 
 input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 926px;
 }
 
 .buttons {
     padding-top: 15px;
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    background-color: white;
 }
 
 .search-results {
