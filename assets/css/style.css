@@ -1,6 +1,5 @@
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*  display: block;*/
 }
 
 body {
@@ -11,68 +10,112 @@ body {
     margin: 0 auto;
 }
 
-form {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .header {
     width: 960px;
-    border-radius: 0.25em;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 0 0 5px 5px;
     background: darkblue;
     color: white;
 }
 
 h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 900;
-    margin: 20px auto;
+    padding: 20px auto;
 }
 
 #form-header {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 18px;
     padding: 10px;
     border-bottom: 1px solid black;
 }
 
 .input-form {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 15px;
     border: 1px solid black;
-    border-radius: 0.25em;
+    border-radius: 5px;
     width: 928px;
     margin: 10px auto;
     text-align: left;
 }
 
-label {
-    margin: 10px 0;
+ul li {
+    padding: 5px 0;
+}
+
+.formLabel {
+
 }
 
 input {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 926px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 916px;
+    padding: 5px;
+}
+input:focus, input:hover {
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
 }
 
 .buttons {
-    padding-top: 15px;
+    margin-top: 10px;
 }
 
 button {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
     background-color: white;
+    padding: 5px;
+}
+
+button:focus, button:hover {
+    border: 1px solid #b1e1e4;
+    border-radius: 5px;
 }
 
 .search-results {
     border: 1px solid black;
     padding: 15px;
-    border-radius: 0.25em;
+    border-radius: 5px;
     width: 928px;
     margin: 10px auto;
     text-align: left;
 }
 
 #results-header {
+    font-weight: 500;
+    font-size: 18px;
     padding: 10px;
     border-bottom: 1px solid black;
+}
+
+.results-display {
+    padding-top: 10px;
+}
+
+#article-headline{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#article-byline {
+    font-size: 13px;
+}
+
+#article-section {
+    font-size: 13px;
+    font-style: italic;
+}
+
+#article-date {
+    font-size: 12px;
+}
+
+#article-link {
+    font-size: 14px;
 }

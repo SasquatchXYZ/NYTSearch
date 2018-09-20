@@ -17,34 +17,36 @@
 
 <body>
 <div class="header">
-    <h1 class="far fa-newspaper"> New York Times Search</h1>
+    <h1><i class="far fa-newspaper"></i> New York Times Search</h1>
 </div>
 
 <form class="input-form">
-    <div id="form-header"><i class="fas fa-newspaper"> Search Parameters</i></div>
-    <label class="formLabel">Search Term:</label><br>
-    <input type="text" onfocus="this.value=''" name="search-term" value="" id="search-term">
-    <label class="formLabel">Number of Records to Retrieve:</label><br>
-    <input type="number" onfocus="this.value=''" name="record-num" value ="" id="article-num">
-<!--    <select id="article-num" name="record-num">
-        <option selected value="1">1</option>
-        <option value="5" selected>5</option>
-        <option value="10">10</option>
-    </select>-->
-    <label class="formLabel">Start Year (Optional):</label><br>
-    <input type="date" onfocus="this.value=''" name="start-year" value="" id="start-year">
-    <label class="formLabel">End Year (Optional):</label><br>
-    <input type="date" onfocus="this.value=''" name="stop-year" value="" id="end-year">
+    <div id="form-header"><i class="fas fa-newspaper"></i> Search Parameters</div>
+    <ul>
+        <li><label class="formLabel">Search Term:</label></li>
+        <li><input type="text" onfocus="this.value=''" name="search-term" id="search-term"></li>
+        <li><label class="formLabel">Number of Records to Retrieve:</label></li>
+        <li><input type="number" onfocus="this.value=''" name="record-num" min="1" max="10" id="article-num"></li>
+
+    <!-- The following lines of commented out code are if you want the years to be optional -->
+<!--        <li><label class="formLabel">Start Year (Optional):</label></li>
+        <li><input type="text" onfocus="this.value=''" name="start-year" maxlength="4" id="start-year"></li>
+        <li><label class="formLabel">End Year (Optional):</label></li>
+        <li><input type="text" onfocus="this.value=''" name="stop-year" maxlength="4" id="end-year"></li>-->
+
+        <li><label class="formLabel">Start Year (Required):</label></li>
+        <li><input type="date" onfocus="this.value=''" name="start-year" id="start-year"></li>
+        <li><label class="formLabel">End Year (Required):</label></li>
+        <li><input type="date" onfocus="this.value=''" name="stop-year" id="end-year"></li>
+    </ul>
     <div class="buttons">
-        <button type="submit" id="start-search"><i class="fas fa-search"> Search</i></button>
-        <button id="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>
+        <button type="submit" id="start-search"><i class="fas fa-search"></i> Search</button>
+        <button id="clearForm"><i class="fas fa-trash-alt"></i> Clear Results</button>
     </div>
-<!--    <button type="submit"><i class="fas fa-search"> Search</i></button>
-    <button class="clearForm"><i class="fas fa-trash-alt"> Clear Results</i></button>-->
 </form>
 
 <div class="search-results">
-    <div id="results-header"><i class="fas fa-table"> Top Articles</i></div>
+    <div id="results-header"><i class="fas fa-table"></i> Top Articles</div>
     <div class="results-display">
 
     </div>
