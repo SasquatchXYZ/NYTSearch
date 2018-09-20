@@ -29,13 +29,13 @@ h1 {
     font-weight: 500;
     font-size: 18px;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #bdbdbd;
 }
 
 .input-form {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     width: 928px;
     margin: 10px auto;
@@ -79,8 +79,8 @@ button:focus, button:hover {
 }
 
 .search-results {
-    border: 1px solid black;
-    padding: 15px;
+    border: 1px solid #bdbdbd;
+    padding: 15px 15px 5px 15px;
     border-radius: 5px;
     width: 928px;
     margin: 10px auto;
@@ -91,11 +91,18 @@ button:focus, button:hover {
     font-weight: 500;
     font-size: 18px;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #bdbdbd;
 }
 
 .results-display {
-    padding-top: 10px;
+ /*   padding-top: 10px;*/
+}
+
+.article-result {
+    margin: 10px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 #article-headline{

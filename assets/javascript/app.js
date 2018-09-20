@@ -67,7 +67,7 @@ function displayResults(NYTResponse) {
         let articleHeadline = article.headline;
         if (articleHeadline && articleHeadline.main) {
             console.log(articleHeadline.main);
-            articleList.append($(`<li id='article-headline'>${articleNumber}.)  <em>${articleHeadline.main}</em></li>`));
+            articleList.append($(`<li id='article-headline'>${articleNumber}.)  ${articleHeadline.main}</li>`));
         }
 
         // Fetches the Byline from the object returned from NYT.
@@ -81,7 +81,7 @@ function displayResults(NYTResponse) {
         let articleSection = article.section_name;
         if (articleSection) {
             console.log(articleSection);
-            articleList.append($(`<li id='article-section'><i>${articleSection}</i></li>`));
+            articleList.append($(`<li id='article-section'>${articleSection}</li>`));
         }
 
         // Fetches the Publication Date from the object returned from NYT.
@@ -96,7 +96,7 @@ function displayResults(NYTResponse) {
         }
 
         // Adds the article url to the list, set to open in a new tab.
-        articleList.append($(`<li id='article-link'><a href="${article.web_url}" target="_blank">${article.web_url}</a></li><hr>`))
+        articleList.append($(`<li id='article-link'><a href="${article.web_url}" target="_blank">${article.web_url}</a></li>`))
     }
 }
 // Function to clear the previous search results =======================================================================
