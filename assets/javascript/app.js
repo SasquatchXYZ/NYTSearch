@@ -34,9 +34,47 @@ function displayResults(NYTResponse) {
     console.log(NYTResponse);
 
     var numArticles = $("#article-num").val();
+    console.log(numArticles);
 
     for (var k = 0; k < numArticles; k++) {
+        let article = NYTResponse.response.docs[k];
 
+        let articleNumber = k + 1;
+
+        let articleList = $("<ul>");
+        articleList.addClass("article-result");
+
+        $(".results-display").append(articleList);
+
+        let articleHeadline = article.headline;
+
+        if (articleHeadline && articleHeadline.main) {
+            console.log(articleHeadline.main);
+            articleList.append($(`<li id='article-headline'>${articleNumber} <b>${articleHeadline.main}</b></li>`));
+        }
+
+        let articleByline = article.byline;
+        if (articleByline && articleByline.original) {
+            console.log(articleByline.original);
+            articleList.append($(`<li id='article-byline'>${articleByline.original}</li>`));
+        }
+
+        let articleSection = article.section_name;
+        if (articleSection) {
+            console.log(articleSection);
+            articleList.append($(`<li id='article-section'>${articleSection}</li>`));
+        }
+
+        let articleDate = new Date (article.pub_date);
+        var day = ("0" + (articleDate.getDate() + 1)).slice(-2);
+        var month = ("0" + (articleDate.getMonth() + 1)).slice(-2);
+        var year = articleDate.getFullYear();
+        if (articleDate) {
+            console.log(articleDate);
+            articleList.append($(`<li id='article-date'>${month}-${day}-${year}</li>`));
+        }
+
+        articleList.append($(`<li id='article-link'><a href="${article.web_url}">${article.web_url}</a></li>`))
     }
 }
 
