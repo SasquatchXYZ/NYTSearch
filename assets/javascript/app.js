@@ -39,6 +39,7 @@ function makeQueryURL() {
     console.log([year, month, day].join(''));
     queryOptions.end_date = [year, month, day].join('');
 
+    console.log(queryOptions);
     console.log(queryURL);
     console.log(queryURL + $.param(queryOptions));
 
